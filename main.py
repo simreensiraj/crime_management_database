@@ -8,7 +8,7 @@ import webbrowser
 # Function to establish a connection to MySQL database
 def connect():
     try:
-        conn = mysql.connector.connect(host='localhost', database='crime_management_system', user='Simreen', password='Shehzadi#1' )
+        conn = mysql.connector.connect(host='localhost', database='crime_management_system', user='xyz', password='xyz@123' )
         if conn.is_connected():
             print('Connected to MySQL database')
             return conn
@@ -178,15 +178,8 @@ def open_wanted_criminals():
 
     # Dictionary of criminals and their image paths
     criminals = {
-        "Aaron Shaji": "C:/Users/SIMREEN/.vscode/python_grade12/Project_CrimeMangementSystem/criminals poster/Aaron.png",
-        "Akshita Malayathi": "C:/Users/SIMREEN/.vscode/python_grade12/Project_CrimeMangementSystem/criminals poster/Akshita.png",
-        "Amaan Khan": "C:/Users/SIMREEN/.vscode/python_grade12/Project_CrimeMangementSystem/criminals poster/Amaan.png",
-        "Benjamin Kalliath": "C:/Users/SIMREEN/.vscode/python_grade12/Project_CrimeMangementSystem/criminals poster/Benji.png",
-        "Kanika Siva": "C:/Users/SIMREEN/.vscode/python_grade12/Project_CrimeMangementSystem/criminals poster/Kanika.png",
-        "Nishka Pradeep": "C:/Users/SIMREEN/.vscode/python_grade12/Project_CrimeMangementSystem/criminals poster/Nishka.png",
-        "Raza Minaj": "C:/Users/SIMREEN/.vscode/python_grade12/Project_CrimeMangementSystem/criminals poster/Raza.png",
-        "Vedikaa Sharma": "C:/Users/SIMREEN/.vscode/python_grade12/Project_CrimeMangementSystem/criminals poster/Vedikaa.png",
-        "Vrinda": "C:/Users/SIMREEN/.vscode/python_grade12/Project_CrimeMangementSystem/criminals poster/Vrinda.png",
+        "abc": "name1.png",
+        "xyz": "name2.png",
     }
 
     # Function to display the poster in a new window
@@ -268,7 +261,7 @@ def open_inquiries_form():
 
 def download_form():
     import webbrowser
-    webbrowser.open("file:///C:/Users/SIMREEN/Downloads/enhanced_witness_inquiry_form.pdf")
+    webbrowser.open("enhanced_witness_inquiry_form.pdf")
 
 def submit_inquiry():
     messagebox.showinfo("Thank You", "Thank you for your input. Your inquiry has been submitted.")
@@ -332,7 +325,7 @@ def main():
     login_window.geometry("300x550")  
     login_window.configure(bg='#242424')
 
-    image_path = 'C:/Users/SIMREEN/.vscode/python_grade12/Project_CrimeMangementSystem/detective-modified.png'
+    image_path = 'detective-modified.png'
     logo_image = Image.open(image_path)
 
     logo_image = logo_image.resize((300, 300), Image.Resampling.LANCZOS)
